@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karen Zhou</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-brand">Karen Zhou</div>
+    <ul class="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#tools">Tools/Platforms</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#extracurriculars">Extracurriculars/Honors</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-card">
+      <div class="hero-photo">
+        <img src="photo.png" alt="Karen Zhou" />
+      </div>
+      <div class="hero-info">
+        <h1>Karen Zhou</h1>
+        <p class="hero-subtitle">Computer Science + Business at Caltech</p>
+        <div class="hero-details">
+          <div class="detail-row">
+            <span class="detail-label">Phone</span>
+            <span class="detail-value">682-237-9848</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Email</span>
+            <span class="detail-value"><a href="mailto:karen.zhou50@gmail.com">karen.zhou50@gmail.com</a></span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">School</span>
+            <span class="detail-value">Caltech (Pasadena, CA 91125)</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">LinkedIn</span>
+            <span class="detail-value"><a href="https://www.linkedin.com/in/karenzhou20" target="_blank">linkedin.com/in/karenzhou20</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">Jun 2025 – Present</span>
+            <span class="timeline-title">Software Engineer Intern</span>
+            <span class="timeline-company">Acme Technologies</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-right">
+            <p>Developed and maintained microservices in Go and Python for a distributed data pipeline processing over 10M events per day. Collaborated with cross-functional teams to design RESTful APIs and reduce latency by 30%.</p>
+            <div class="tag-row">
+              <span class="tag">Go</span><span class="tag">Python</span><span class="tag">Kubernetes</span><span class="tag">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">Jun 2024 – Sep 2024</span>
+            <span class="timeline-title">Data Science Intern</span>
+            <span class="timeline-company">Insight Analytics</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-right">
+            <p>Built predictive models using XGBoost and LightGBM to forecast customer churn with 87% accuracy. Automated reporting dashboards in Tableau, saving the team 8 hours per week in manual effort.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">Tableau</span><span class="tag">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">Jan 2024 – Jun 2024</span>
+            <span class="timeline-title">Research Assistant</span>
+            <span class="timeline-company">Caltech CMS Department</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-right">
+            <p>Investigated optimization algorithms for large-scale sparse linear systems under Prof. Smith. Implemented custom solvers in C++ and benchmarked convergence against standard BLAS routines, contributing to a published workshop paper.</p>
+            <div class="tag-row">
+              <span class="tag">C++</span><span class="tag">MATLAB</span><span class="tag">Linear Algebra</span><span class="tag">Research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">Sep 2023 – Dec 2023</span>
+            <span class="timeline-title">Teaching Assistant</span>
+            <span class="timeline-company">Caltech CS 1 — Intro to CS</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-right">
+            <p>Led weekly recitation sections of 20 students, held office hours, and graded assignments for the introductory computer science course. Designed supplementary exercises to reinforce recursion and data structures fundamentals.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">Pedagogy</span><span class="tag">Data Structures</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">Sep 2022 – Jun 2026</span>
+            <span class="timeline-title">B.S. Computer Science</span>
+            <span class="timeline-company">California Institute of Technology</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-right">
+            <p>Minor in Business Economics and Management. GPA: 3.9/4.0. Relevant coursework: Algorithms, Machine Learning, Distributed Systems, Probability Theory, Financial Accounting, Corporate Finance.</p>
+            <div class="tag-row">
+              <span class="tag">Algorithms</span><span class="tag">ML</span><span class="tag">Distributed Systems</span><span class="tag">Finance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">Aug 2018 – May 2022</span>
+            <span class="timeline-title">High School Diploma</span>
+            <span class="timeline-company">Westlake High School, TX</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-right">
+            <p>Valedictorian. National Merit Scholar. Competed in USACO (Platinum), MATHCOUNTS, and Science Olympiad. Founded the school's first competitive programming club with 40+ members.</p>
+            <div class="tag-row">
+              <span class="tag">USACO Platinum</span><span class="tag">Valedictorian</span><span class="tag">National Merit</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS/PLATFORMS -->
+  <section id="tools" class="section">
+    <div class="container">
+      <h2 class="section-title">Tools / Platforms</h2>
+      <div class="tools-grid">
+        <div class="tool-category">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li><li>Go</li><li>C/C++</li><li>JavaScript / TypeScript</li><li>SQL</li><li>Java</li><li>MATLAB</li>
+          </ul>
+        </div>
+        <div class="tool-category">
+          <h3>Frameworks & Libraries</h3>
+          <ul>
+            <li>React</li><li>Node.js</li><li>FastAPI</li><li>PyTorch</li><li>scikit-learn</li><li>Pandas / NumPy</li>
+          </ul>
+        </div>
+        <div class="tool-category">
+          <h3>Infrastructure</h3>
+          <ul>
+            <li>AWS (EC2, S3, Lambda)</li><li>Docker / Kubernetes</li><li>PostgreSQL</li><li>Redis</li><li>Terraform</li>
+          </ul>
+        </div>
+        <div class="tool-category">
+          <h3>Dev Tools</h3>
+          <ul>
+            <li>Git / GitHub</li><li>VS Code</li><li>Jupyter</li><li>Tableau</li><li>Figma</li><li>Jira</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Machine Learning</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Backend Development</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Data Analysis</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Systems Programming</span>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Frontend / React</span>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Cloud Infrastructure</span>
+            <span class="skill-pct">72%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Research & Writing</span>
+            <span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Financial Modeling</span>
+            <span class="skill-pct">65%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTRACURRICULARS / HONORS -->
+  <section id="extracurriculars" class="section">
+    <div class="container">
+      <h2 class="section-title">Extracurriculars / Honors</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🏆</div>
+          <h3>Dean's List</h3>
+          <p>Recognized on the Caltech Dean's List for four consecutive terms for academic excellence.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💡</div>
+          <h3>Competitive Programming Club</h3>
+          <p>President of Caltech's ACM chapter. Organizes weekly practice contests and coaches students for ICPC regionals.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Caltech Entrepreneurship Club</h3>
+          <p>Pitched a SaaS product to a panel of VCs at the annual Caltech Business Plan Competition, winning second place.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Women in CS</h3>
+          <p>Active member and event coordinator for Caltech's WiCS chapter, organizing mentorship pairing and speaker series.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📄</div>
+          <h3>Workshop Publication</h3>
+          <p>Co-authored "Efficient Sparse Solver Benchmarking" presented at the NeurIPS Optimization Workshop 2024.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h3>National Merit Scholar</h3>
+          <p>Recognized as a National Merit Scholar finalist in 2022 for outstanding academic achievement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card">
+          <div class="portfolio-preview p1"></div>
+          <div class="portfolio-body">
+            <h3>Distributed Key-Value Store</h3>
+            <p>Implemented a fault-tolerant, linearizable KV store using the Raft consensus algorithm in Go. Supports log compaction and leader election with &lt;50ms failover.</p>
+            <div class="tag-row">
+              <span class="tag">Go</span><span class="tag">Raft</span><span class="tag">Distributed Systems</span>
+            </div>
+            <a class="portfolio-link" href="#" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-preview p2"></div>
+          <div class="portfolio-body">
+            <h3>ML Churn Prediction Pipeline</h3>
+            <p>End-to-end pipeline for customer churn prediction: feature engineering, hyperparameter tuning with Optuna, and a FastAPI serving layer with Docker deployment.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">FastAPI</span><span class="tag">Docker</span>
+            </div>
+            <a class="portfolio-link" href="#" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-preview p3"></div>
+          <div class="portfolio-body">
+            <h3>Compiler for MiniJava</h3>
+            <p>A full compiler from a subset of Java to x86-64 assembly, including lexing, parsing, semantic analysis, register allocation, and peephole optimization.</p>
+            <div class="tag-row">
+              <span class="tag">C++</span><span class="tag">LLVM IR</span><span class="tag">Compilers</span>
+            </div>
+            <a class="portfolio-link" href="#" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-preview p4"></div>
+          <div class="portfolio-body">
+            <h3>Portfolio Optimizer</h3>
+            <p>Web app for mean-variance portfolio optimization using real-time stock data from Yahoo Finance API. Built with React frontend and Python (SciPy) backend.</p>
+            <div class="tag-row">
+              <span class="tag">React</span><span class="tag">Python</span><span class="tag">SciPy</span><span class="tag">Finance</span>
+            </div>
+            <a class="portfolio-link" href="#" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p class="contact-intro">I'm always open to new opportunities, research collaborations, or just a good conversation about tech. Feel free to reach out!</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.25 1.18 2 2 0 012.23 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <span>682-237-9848</span>
+            </div>
+            <div class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:karen.zhou50@gmail.com">karen.zhou50@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="https://www.linkedin.com/in/karenzhou20" target="_blank">linkedin.com/in/karenzhou20</a>
+            </div>
+            <div class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Caltech, Pasadena, CA 91125</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Karen Zhou · Built with care</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
