@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Karen Zhou</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -19,6 +19,7 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#extracurriculars">Extracurriculars/Honors</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -28,32 +29,43 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-bg"></div>
-    <div class="hero-card">
-      <div class="hero-photo">
-        <img src="photo.png" alt="Karen Zhou" />
-      </div>
-      <div class="hero-info">
-        <h1>Karen Zhou</h1>
-        <p class="hero-subtitle">Computer Science + Business at Caltech</p>
-        <div class="hero-details">
-          <div class="detail-row">
-            <span class="detail-label">Phone</span>
-            <span class="detail-value">682-237-9848</span>
-          </div>
-          <div class="detail-row">
-            <span class="detail-label">Email</span>
-            <span class="detail-value"><a href="mailto:karen.zhou50@gmail.com">karen.zhou50@gmail.com</a></span>
-          </div>
-          <div class="detail-row">
-            <span class="detail-label">School</span>
-            <span class="detail-value">Caltech (Pasadena, CA 91125)</span>
-          </div>
-          <div class="detail-row">
-            <span class="detail-label">LinkedIn</span>
-            <span class="detail-value"><a href="https://www.linkedin.com/in/karenzhou20" target="_blank">linkedin.com/in/karenzhou20</a></span>
+    <div class="hero-stack">
+      <div class="hero-card">
+        <div class="hero-photo">
+          <img src="photo.png" alt="Karen Zhou" />
+        </div>
+        <div class="hero-info">
+          <h1>Karen Zhou</h1>
+          <p class="hero-subtitle">Computer Science + Business at Caltech</p>
+          <div class="hero-details">
+            <div class="detail-row">
+              <span class="detail-label">Phone</span>
+              <span class="detail-value">682-237-9848</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Email</span>
+              <span class="detail-value"><a href="mailto:karen.zhou50@gmail.com">karen.zhou50@gmail.com</a></span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">School</span>
+              <span class="detail-value">Caltech (Pasadena, CA 91125)</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">LinkedIn</span>
+              <span class="detail-value"><a href="https://www.linkedin.com/in/karenzhou20" target="_blank">linkedin.com/in/karenzhou20</a></span>
+            </div>
           </div>
         </div>
       </div>
+      <div class="hero-bar"></div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section id="intro" class="section intro-section">
+    <div class="container intro-container">
+      <h2 class="intro-heading">Hello! I'm Karen</h2>
+      <p class="intro-text">I'm a senior double majoring in computer science and business at Caltech. My interests include machine learning/artificial intelligence, big data, and cloud computing. I'm passionate about building technical solutions that bridge cutting edge technology with real world needs.</p>
     </div>
   </section>
 
@@ -65,60 +77,135 @@
 
         <div class="timeline-item">
           <div class="timeline-left">
-            <span class="timeline-date">[Month Year] – Present</span>
-            <span class="timeline-title">[Job Title]</span>
-            <span class="timeline-company">[Company Name]</span>
+            <span class="timeline-date">June 2025 – September 2025</span>
+            <span class="timeline-title">Intern</span>
+            <span class="timeline-company">Plix AI</span>
           </div>
           <div class="timeline-dot"></div>
           <div class="timeline-right">
-            <p>[Description of role and responsibilities. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.]</p>
+            <p>Built and deployed automated RFP analysis system using AI and Gemini API with JSON schema outputs; developed scalable audio processing microservice as part of a distributed backend pipeline, designing and integrating a Python-based speaker diarization module using ML embeddings into an event driven microservices architecture. Optimized AI inference throughput and cost; containerized backend services with Docker, deployed to Azure Functions with Cosmos DB and Azure Task orchestration. Leveraged Microsoft Azure and Google Cloud Platform for training, benchmarking, and cross-cloud deployments; created modular, testable code with emphasis on maintainability, scalability, and DevOps best practices. Shipped stakeholder-facing demos using React, Tailwind CSS, and HTML; refined tone/brand voice, and validated system robustness.</p>
             <div class="tag-row">
-              <span class="tag">[Skill]</span><span class="tag">[Skill]</span><span class="tag">[Skill]</span><span class="tag">[Skill]</span>
+              <span class="tag">Python</span><span class="tag">Azure</span><span class="tag">Docker</span><span class="tag">React</span><span class="tag">Gemini API</span>
             </div>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-left">
-            <span class="timeline-date">[Month Year] – [Month Year]</span>
-            <span class="timeline-title">[Job Title]</span>
-            <span class="timeline-company">[Company Name]</span>
+            <span class="timeline-date">April 2025 – June 2025</span>
+            <span class="timeline-title">Bi 1 Teaching Assistant</span>
+            <span class="timeline-company">Caltech</span>
           </div>
           <div class="timeline-dot"></div>
           <div class="timeline-right">
-            <p>[Description of role and responsibilities. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.]</p>
+            <p>Serve as a course assistant for Caltech's introductory biology course, leading weekly recitation sections and hosting office hours to support student learning and engagement. Collaborate with faculty and TAs to develop and refine assignments, provide academic mentorship, and grade assessments with an emphasis on scientific reasoning and problem-solving.</p>
             <div class="tag-row">
-              <span class="tag">[Skill]</span><span class="tag">[Skill]</span><span class="tag">[Skill]</span><span class="tag">[Skill]</span>
+              <span class="tag">Teaching</span><span class="tag">Mentorship</span><span class="tag">Biology</span>
             </div>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-left">
-            <span class="timeline-date">[Month Year] – [Month Year]</span>
-            <span class="timeline-title">[Job Title]</span>
-            <span class="timeline-company">[Company Name]</span>
+            <span class="timeline-date">June 2024 – September 2024</span>
+            <span class="timeline-title">Researcher in Astrophysics (SURF)</span>
+            <span class="timeline-company">Caltech</span>
           </div>
           <div class="timeline-dot"></div>
           <div class="timeline-right">
-            <p>[Description of role and responsibilities. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.]</p>
+            <p>Using multiple unsupervised machine learning techniques to analyze photometric light curves of young stars in order to further understanding of early star formation processes under the guidance of Professor Lynne Hillenbrand in the PMA department.</p>
             <div class="tag-row">
-              <span class="tag">[Skill]</span><span class="tag">[Skill]</span><span class="tag">[Skill]</span><span class="tag">[Skill]</span>
+              <span class="tag">Machine Learning</span><span class="tag">Python</span><span class="tag">Astrophysics</span><span class="tag">Data Analysis</span>
             </div>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-left">
-            <span class="timeline-date">[Month Year] – [Month Year]</span>
-            <span class="timeline-title">[Job Title]</span>
-            <span class="timeline-company">[Company Name]</span>
+            <span class="timeline-date">May 2024 – Present</span>
+            <span class="timeline-title">Avionics Team</span>
+            <span class="timeline-company">Caltech PARSEC</span>
           </div>
           <div class="timeline-dot"></div>
           <div class="timeline-right">
-            <p>[Description of role and responsibilities. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.]</p>
+            <p>Developed backend logic for GUI features, integrating into a Python-based server to manage real-time data processing and system communication. Conducted system simulations using Gazebo in C++, enabling accurate testing and validation of system performance. Collaborated with a cross-functional team to enhance system reliability and optimize user interface interactions.</p>
             <div class="tag-row">
-              <span class="tag">[Skill]</span><span class="tag">[Skill]</span><span class="tag">[Skill]</span><span class="tag">[Skill]</span>
+              <span class="tag">Python</span><span class="tag">C++</span><span class="tag">Gazebo</span><span class="tag">Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">July 2023 – September 2023</span>
+            <span class="timeline-title">Researcher in CMS Department (FSRI)</span>
+            <span class="timeline-company">Caltech</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-right">
+            <p>Surveyed, categorized, and compared the different ways of perception-based control in terms of their robustness to perception perturbation, from both theoretical guarantees to simulation comparisons.</p>
+            <div class="tag-row">
+              <span class="tag">Research</span><span class="tag">Robotics</span><span class="tag">Control Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">December 2021 – Present</span>
+            <span class="timeline-title">Open Source Contributor</span>
+            <span class="timeline-company">GitHub</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-right">
+            <p>Created multiple GitHub repositories for Python and BigQuery implementations, including a convolutional neural network able to predict forest fires using Keras in Google Colab for my AP Research project.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">BigQuery</span><span class="tag">Keras</span><span class="tag">Deep Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">May 2022 – August 2022</span>
+            <span class="timeline-title">Swim Instructor</span>
+            <span class="timeline-company">City of Southlake</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-right">
+            <p>Teaching swimming techniques, swimming strokes, and water safety rules to students with varying swimming abilities at Champions Club at The Marq.</p>
+            <div class="tag-row">
+              <span class="tag">Instruction</span><span class="tag">Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">June 2021 – August 2021</span>
+            <span class="timeline-title">Student</span>
+            <span class="timeline-company">Summer STEM Institute</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-right">
+            <p>Utilized Python's data analysis libraries to design and conduct interdisciplinary data science research projects. Designed machine learning models for supervised settings and applied techniques such as multiple linear regression, logistic regression, and decision trees. Data science libraries used include numpy, pandas, matplotlib, and sklearn.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">numpy</span><span class="tag">pandas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-date">September 2021 – May 2023</span>
+            <span class="timeline-title">Chemistry Tutor</span>
+            <span class="timeline-company">Byron Nelson High School</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-right">
+            <p>Assisted high school pre-AP students with one-on-one tutoring.</p>
+            <div class="tag-row">
+              <span class="tag">Tutoring</span><span class="tag">Chemistry</span>
             </div>
           </div>
         </div>
@@ -135,30 +222,30 @@
 
         <div class="timeline-item">
           <div class="timeline-left">
-            <span class="timeline-date">[Year] – [Year]</span>
-            <span class="timeline-title">[Degree Name]</span>
-            <span class="timeline-company">[University Name]</span>
+            <span class="timeline-date">2023 – 2027</span>
+            <span class="timeline-title">Bachelor of Science</span>
+            <span class="timeline-company">Caltech</span>
           </div>
           <div class="timeline-dot"></div>
           <div class="timeline-right">
-            <p>[Description of degree, major, minor, GPA, and relevant coursework. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]</p>
+            <p>Double Major in CS and Business. Relevant Coursework: CS 155: Machine Learning and Data Mining, CS 38: Algorithms, CS 2: Programming Methods, CS 3: Software Design, CS 21: Decidability and Tractability, CS 24: Computing Systems, Me 8: Introduction to Robotics, Ma 1abc: Calculus of One and Several Variables and Linear Algebra, Ma 2: Differential Equations, Ma 3: Probability and Statistics, ACM 104: Linear Algebra, ACM 116: Probability Models, BEM 103: Finance, BEM 104: Investments, BEM 106: Data Science in Economics and Finance, Ec 122: Econometrics.</p>
             <div class="tag-row">
-              <span class="tag">[Course]</span><span class="tag">[Course]</span><span class="tag">[Course]</span><span class="tag">[Course]</span>
+              <span class="tag">Machine Learning</span><span class="tag">Algorithms</span><span class="tag">Finance</span><span class="tag">Robotics</span>
             </div>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-left">
-            <span class="timeline-date">[Year] – [Year]</span>
-            <span class="timeline-title">[Degree Name]</span>
-            <span class="timeline-company">[School Name]</span>
+            <span class="timeline-date">2019 – 2023</span>
+            <span class="timeline-title">High School Diploma</span>
+            <span class="timeline-company">Byron Nelson High School</span>
           </div>
           <div class="timeline-dot"></div>
           <div class="timeline-right">
-            <p>[Description of school, honors, activities, and achievements. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]</p>
+            <p>GPA 4.0 out of 4.0, class rank 1 out of 625. SAT 1570 out of 1600 (top 1% in the nation). ACT 35 out of 36 (top 1% in the nation). PSAT/NMSQT 1510 out of 1520 (top 1% in the nation).</p>
             <div class="tag-row">
-              <span class="tag">[Honor]</span><span class="tag">[Honor]</span><span class="tag">[Activity]</span>
+              <span class="tag">Valedictorian</span><span class="tag">National Merit Finalist</span><span class="tag">AP Scholar with Distinction</span>
             </div>
           </div>
         </div>
@@ -274,10 +361,10 @@
         <div class="portfolio-card">
           <div class="portfolio-preview p1"></div>
           <div class="portfolio-body">
-            <h3>[Project Name]</h3>
-            <p>[Description of this project, what it does, and what technologies were used. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.]</p>
+            <h3>Polyquarket</h3>
+            <p>A prediction market platform inspired by Polymarket and Kalshi, built for a University of Chicago Physics PhD department event. Users trade on outcome probabilities across department-specific questions using play money, with real-time market pricing, automated resolution, and a live leaderboard to drive engagement in forecasting event outcomes.</p>
             <div class="tag-row">
-              <span class="tag">[Tech]</span><span class="tag">[Tech]</span><span class="tag">[Tech]</span>
+              <span class="tag">Python</span><span class="tag">React</span><span class="tag">Prediction Markets</span><span class="tag">Full Stack</span>
             </div>
             <a class="portfolio-link" href="#" target="_blank">View on GitHub →</a>
           </div>
@@ -286,10 +373,10 @@
         <div class="portfolio-card">
           <div class="portfolio-preview p2"></div>
           <div class="portfolio-body">
-            <h3>[Project Name]</h3>
-            <p>[Description of this project, what it does, and what technologies were used. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.]</p>
+            <h3>CheXpert Competition</h3>
+            <p>Collaborated on a machine learning team project focused on automated anomaly detection in chest radiographs using the CheXpert dataset. Developed predictive models to identify key clinical findings such as Cardiomegaly, Lung Opacity, and Pleural Effusion across thousands of chest X-rays. Employed advanced ML techniques to minimize mean squared error (MSE) across multiple diagnosis labels, with scores normalized by category variance.</p>
             <div class="tag-row">
-              <span class="tag">[Tech]</span><span class="tag">[Tech]</span><span class="tag">[Tech]</span><span class="tag">[Tech]</span>
+              <span class="tag">Python</span><span class="tag">Deep Learning</span><span class="tag">Medical Imaging</span><span class="tag">scikit-learn</span>
             </div>
             <a class="portfolio-link" href="#" target="_blank">View on GitHub →</a>
           </div>
@@ -298,10 +385,10 @@
         <div class="portfolio-card">
           <div class="portfolio-preview p3"></div>
           <div class="portfolio-body">
-            <h3>[Project Name]</h3>
-            <p>[Description of this project, what it does, and what technologies were used. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.]</p>
+            <h3>Unsupervised ML for Young Star Photometric Light Curves (2024)</h3>
+            <p>Analyzed photometric light curves of young stars using multiple unsupervised machine learning techniques to further understanding of early star formation processes under the guidance of Professor Lynne Hillenbrand in the PMA department. Worked with data from the Kepler/K2 and Transiting Exoplanet Survey Satellite (TESS) NASA missions, which include high-precision photometry for thousands of stars in the K2 dataset and over 200,000 stars in the TESS dataset to extract relevant features.</p>
             <div class="tag-row">
-              <span class="tag">[Tech]</span><span class="tag">[Tech]</span><span class="tag">[Tech]</span>
+              <span class="tag">Python</span><span class="tag">Unsupervised ML</span><span class="tag">Astrophysics</span><span class="tag">NASA</span>
             </div>
             <a class="portfolio-link" href="#" target="_blank">View on GitHub →</a>
           </div>
@@ -310,12 +397,36 @@
         <div class="portfolio-card">
           <div class="portfolio-preview p4"></div>
           <div class="portfolio-body">
-            <h3>[Project Name]</h3>
-            <p>[Description of this project, what it does, and what technologies were used. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.]</p>
+            <h3>Tower Hopper (Platformer Game)</h3>
+            <p>Designed and developed a fully functional 2D platformer game in a team of 3 where a treasure hunter ascends a dynamic tower by jumping between walls while avoiding enemies and obstacles. Implemented game physics including gravity, collision detection, and surface friction types (normal, icy, sticky) to affect movement. Built enemy AI (ghosts) with chase behavior and damage mechanics with temporary invincibility.</p>
             <div class="tag-row">
-              <span class="tag">[Tech]</span><span class="tag">[Tech]</span><span class="tag">[Tech]</span><span class="tag">[Tech]</span>
+              <span class="tag">Python</span><span class="tag">Game Dev</span><span class="tag">Physics Engine</span><span class="tag">AI</span>
             </div>
             <a class="portfolio-link" href="#" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-preview p5"></div>
+          <div class="portfolio-body">
+            <h3>An Investigation of the Robustness of Machine Perception for Control</h3>
+            <p>Modern day control systems such as autonomous driving typically utilize image and video signals to produce feedback control. However, adversarial noise can often interfere with label prediction and thus lead to decreased robustness. This project investigates adversarial robustness of convolutional neural network (CNN) based machine perception for identifying the position of a driving car.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">CNN</span><span class="tag">Adversarial ML</span><span class="tag">Control Systems</span>
+            </div>
+            <a class="portfolio-link" href="#" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-preview p6"></div>
+          <div class="portfolio-body">
+            <h3>GitHub Repository</h3>
+            <p>Since 2021, I have created several GitHub repositories containing my implementations in Python, C/C++, and BigQuery, including a convolutional neural network to predict forest fires using Keras in Google Colab for my AP Research project.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">C/C++</span><span class="tag">BigQuery</span><span class="tag">Keras</span>
+            </div>
+            <a class="portfolio-link" href="https://github.com" target="_blank">View on GitHub →</a>
           </div>
         </div>
 
@@ -329,34 +440,61 @@
       <h2 class="section-title">Extracurriculars / Honors</h2>
       <div class="cards-grid">
         <div class="card">
-          <div class="card-icon">🏆</div>
-          <h3>[Honor / Award Name]</h3>
-          <p>[Description of this honor or award. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.]</p>
+          <h3>NCAA Collegiate Student Athlete</h3>
+          <p>Compete as an NCAA Division III swimmer for Caltech, scoring at the SCIAC (Southern California Intercollegiate Athletic Conference), a highly competitive athletic conference featuring top-tier academic institutions in the region.</p>
         </div>
         <div class="card">
-          <div class="card-icon">💡</div>
-          <h3>[Club / Organization Name]</h3>
-          <p>[Description of role and involvement. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.]</p>
+          <h3>Peer Advocate</h3>
+          <p>Trained in mental health support, active listening, and crisis intervention in order to enhance the residential experience for students by providing resources, promote self-care, and foster a supportive and accountable community.</p>
         </div>
         <div class="card">
-          <div class="card-icon">🚀</div>
-          <h3>[Club / Organization Name]</h3>
-          <p>[Description of role and involvement. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.]</p>
+          <h3>Health Advocate</h3>
+          <p>Respond to situations within the campus community that requires emergency first-aid, attention to routine medical problems, peer counseling, or crisis intervention. Certified first responder with several Red Cross emergency services certifications upon completion of training.</p>
         </div>
         <div class="card">
-          <div class="card-icon">🌐</div>
-          <h3>[Club / Organization Name]</h3>
-          <p>[Description of role and involvement. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.]</p>
+          <h3>Valedictorian</h3>
+          <p>Highest ranked student in the graduating class of 2023 at Byron Nelson High School based on weighted GPA.</p>
         </div>
         <div class="card">
-          <div class="card-icon">📄</div>
-          <h3>[Publication / Research]</h3>
-          <p>[Description of publication or research contribution. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.]</p>
+          <h3>2023 National Merit Finalist</h3>
+          <p>Scored in the top 1% of 1.5 million high school students in the PSAT/NMSQT and judged to have the strongest combination of accomplishments, skills, and potential for success in rigorous college studies.</p>
         </div>
         <div class="card">
-          <div class="card-icon">🎓</div>
-          <h3>[Honor / Award Name]</h3>
-          <p>[Description of this honor or award. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.]</p>
+          <h3>Northwest ISD Trustee Award of Excellence</h3>
+          <p>The highest and most prestigious district award given annually to exceptional students. Received 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.</p>
+        </div>
+        <div class="card">
+          <h3>Fighting Heart Award</h3>
+          <p>Voted as the swimmer who most inspires others and positively represents the organization as a whole with their dedication to the sport, excellent citizenship, and exemplary academics. Received for the 2019-2020, 2020-21, 2021-22, 2022-23 seasons.</p>
+        </div>
+        <div class="card">
+          <h3>AP Scholar with Distinction</h3>
+          <p>Demonstrated outstanding college-level achievement through high performance on multiple AP exams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">682-237-9848</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value"><a href="mailto:karen.zhou50@gmail.com">karen.zhou50@gmail.com</a></span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">School</span>
+          <span class="contact-value">Caltech (Pasadena, CA 91125)</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value"><a href="https://www.linkedin.com/in/karenzhou20" target="_blank">linkedin.com/in/karenzhou20</a></span>
         </div>
       </div>
     </div>
