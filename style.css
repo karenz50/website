@@ -212,22 +212,15 @@ a:hover { text-decoration: underline; }
 
 .section-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--black);
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   position: relative;
-  display: inline-block;
-  letter-spacing: -.01em;
-}
-.section-title::after {
-  content: '';
   display: block;
-  margin-top: 8px;
-  height: 2px;
-  width: 40px;
-  border-radius: 1px;
-  background: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .3em;
 }
 
 /* ============================================================
@@ -263,25 +256,28 @@ a:hover { text-decoration: underline; }
 }
 .timeline-date {
   display: block;
-  font-size: .68rem;
-  font-weight: 500;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: .3rem;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .22em;
+  color: var(--black);
+  margin-bottom: .5rem;
 }
 .timeline-title {
   display: block;
-  font-weight: 500;
-  font-size: .93rem;
-  color: var(--black);
+  font-weight: 400;
+  font-size: .82rem;
+  letter-spacing: .1em;
+  color: var(--mid);
   margin-bottom: .15rem;
 }
 .timeline-company {
   display: block;
   font-size: .8rem;
-  color: var(--muted);
-  font-weight: 300;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: .6rem;
 }
 
 .timeline-dot {
@@ -310,8 +306,8 @@ a:hover { text-decoration: underline; }
 .timeline-right p {
   font-size: .88rem;
   font-weight: 300;
-  color: var(--text);
-  line-height: 1.75;
+  color: #465272;
+  line-height: 1.8;
   margin-bottom: .8rem;
 }
 
