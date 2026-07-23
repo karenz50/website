@@ -330,7 +330,7 @@ a:hover { text-decoration: underline; }
    ============================================================ */
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 .tool-category h3 {
@@ -545,10 +545,12 @@ footer {
 
   .portfolio-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
+  .tools-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 500px) {
   .hero-info { padding: 2rem 1.5rem; }
   .hero-info h1 { font-size: 1.8rem; }
   .section { padding: 70px 1rem; }
+  .tools-grid { grid-template-columns: 1fr; }
 }
