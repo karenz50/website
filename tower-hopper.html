@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karen Zhou | Tower Hopper</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-brand">Karen Zhou</a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#tools">Tools/Platforms</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html#portfolio">Portfolio</a>
+        <ul class="dropdown-menu">
+          <li><a href="polyquarket.html">Polyquarket</a></li>
+          <li><a href="chexpert.html">CheXpert Competition</a></li>
+          <li><a href="light-curves.html">Photometric Light Curves</a></li>
+          <li><a href="tower-hopper.html">Tower Hopper</a></li>
+          <li><a href="robustness.html">Robustness of Machine Perception</a></li>
+          <li><a href="fire-detection.html">Fire Detection Using Keras</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#extracurriculars">Extracurriculars/Honors</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-stack">
+      <div class="project-card">
+        <h1>Tower Hopper</h1>
+        <p class="project-subtitle">CS 3 (2024)</p>
+      </div>
+      <div class="project-bar"></div>
+    </div>
+  </section>
+
+  <!-- PROJECT CONTENT -->
+  <section class="project-content">
+    <div class="container project-container">
+      <p>Tower Climber is a fast-paced 2D platformer where players control a treasure hunter scaling a perilous tower while evading ghostly enemies. The goal: reach the top before the ghosts catch up or gravity drags you down.</p>
+
+      <h2 class="project-subhead">Gameplay Mechanics</h2>
+      <ul>
+        <li>Movement &amp; Physics: Players jump between walls using the arrow keys, navigating an environment governed by real-time gravity, friction, and collision forces.</li>
+        <li>Wall Types:
+          <ul class="nested">
+            <li>Normal walls allow light sliding.</li>
+            <li>Icy walls cause players to slip, increasing movement challenge.</li>
+            <li>Sticky walls halt vertical motion, letting players pause and plan.</li>
+          </ul>
+        </li>
+        <li>Enemies: Ghosts actively pursue the player when within a certain radius. Contact results in damage and temporary invincibility.</li>
+        <li>Damage System: Players can take up to 3 hits before losing, represented by a custom health bar.</li>
+        <li>Victory Condition: Reach the treasure at the tower's peak while outpacing both enemies and gravity.</li>
+      </ul>
+
+      <h2 class="project-subhead">Technical Features</h2>
+      <ul>
+        <li>Custom Physics Engine: Implemented gravity, jump arcs, sliding friction, and force-based interactions.</li>
+        <li>Collision Detection: Managed interactions between player, enemies, obstacles, and level terrain.</li>
+        <li>Enemy AI: Ghosts track player movement with proximity-based behavior and destructive collision logic.</li>
+        <li>Power-Ups: Collectible items grant advantages like invincibility or speed boosts.</li>
+        <li>UI &amp; Game Flow: Menu screens, HUD elements, and vertical camera scrolling for dynamic level progression.</li>
+      </ul>
+
+      <h2 class="project-subhead">Design and Implementation</h2>
+      <ul>
+        <li>Sprites &amp; Polygons: Custom sprites for characters and enemies; polygons used to build varied level geometry.</li>
+        <li>Input Handling: Smooth keyboard controls enabling mid-air direction changes and responsive jump physics.</li>
+        <li>Audio &amp; Polish: Sound effects for collisions and movement, background music based on game scenes, and in-game story cues for immersive experience.</li>
+      </ul>
+
+      <a class="project-btn" href="#">Source Code</a>
+
+      <div class="tag-row">
+        <span class="tag">Python</span><span class="tag">Game Dev</span><span class="tag">Physics Engine</span><span class="tag">AI</span>
+      </div>
+
+      <div class="project-figure">
+        <img src="portfolio-imgs/towerclimber.png" alt="Tower Climber game screenshot" />
+      </div>
+
+      <a class="project-back" href="index.html#portfolio">← Back to Portfolio</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Karen Zhou</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

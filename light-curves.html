@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karen Zhou | Photometric Light Curves</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-brand">Karen Zhou</a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#tools">Tools/Platforms</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html#portfolio">Portfolio</a>
+        <ul class="dropdown-menu">
+          <li><a href="polyquarket.html">Polyquarket</a></li>
+          <li><a href="chexpert.html">CheXpert Competition</a></li>
+          <li><a href="light-curves.html">Photometric Light Curves</a></li>
+          <li><a href="tower-hopper.html">Tower Hopper</a></li>
+          <li><a href="robustness.html">Robustness of Machine Perception</a></li>
+          <li><a href="fire-detection.html">Fire Detection Using Keras</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#extracurriculars">Extracurriculars/Honors</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-stack">
+      <div class="project-card">
+        <h1>Unsupervised Machine Learning for Analysis of Young Star Photometric Light Curves</h1>
+        <p class="project-subtitle">Summer Undergraduate Research Fellowship at Caltech (2024)</p>
+      </div>
+      <div class="project-bar"></div>
+    </div>
+  </section>
+
+  <!-- PROJECT CONTENT -->
+  <section class="project-content">
+    <div class="container project-container">
+      <p>Time series data such as stock market prices in finance or light curves in astronomy present a notoriously challenging problem in machine learning. Spectral clustering is a type of unsupervised machine learning that transforms data points into a graph structure where each point is a node and edges represent the similarity between nodes. I apply spectral clustering to the normalized flux of light curves in the Upper Scorpius and Taurus clusters in the K2 and TESS datasets to obtain a nuanced understanding of stellar variability and characteristics beyond those available using standard light curve metrics. I utilize quantile graphs for dimensionality reduction, capturing the general motion of the light curves while remaining robust to attributes such as amplitudes, period, and phase as well as fluctuations in the data. By applying an unsupervised method to a traditionally supervised task, I aim to uncover novel insights in the light curves.</p>
+
+      <a class="project-btn" href="#">Learn More</a>
+
+      <div class="tag-row">
+        <span class="tag">Python</span><span class="tag">Unsupervised ML</span><span class="tag">Astrophysics</span><span class="tag">NASA</span>
+      </div>
+
+      <div class="project-tools">
+        <h2 class="project-tools-title">Tools</h2>
+        <div class="project-tools-row">
+          <div class="project-tool-tile">scikit-learn</div>
+          <div class="project-tool-tile">NumPy</div>
+          <div class="project-tool-tile">pandas</div>
+          <div class="project-tool-tile">astropy</div>
+        </div>
+      </div>
+
+      <a class="project-back" href="index.html#portfolio">← Back to Portfolio</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Karen Zhou</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

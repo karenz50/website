@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karen Zhou | CheXpert Medical Imaging Competition</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-brand">Karen Zhou</a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#tools">Tools/Platforms</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html#portfolio">Portfolio</a>
+        <ul class="dropdown-menu">
+          <li><a href="polyquarket.html">Polyquarket</a></li>
+          <li><a href="chexpert.html">CheXpert Competition</a></li>
+          <li><a href="light-curves.html">Photometric Light Curves</a></li>
+          <li><a href="tower-hopper.html">Tower Hopper</a></li>
+          <li><a href="robustness.html">Robustness of Machine Perception</a></li>
+          <li><a href="fire-detection.html">Fire Detection Using Keras</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#extracurriculars">Extracurriculars/Honors</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-stack">
+      <div class="project-card">
+        <h1>CheXpert Medical Imaging Competition</h1>
+        <p class="project-subtitle">CS 156b (2025)</p>
+      </div>
+      <div class="project-bar"></div>
+    </div>
+  </section>
+
+  <!-- PROJECT CONTENT -->
+  <section class="project-content">
+    <div class="container project-container">
+      <p>This project tackled automated anomaly detection in chest radiographs using over 100 thousand images from the CheXpert dataset, a large-scale labeled dataset curated for real-world medical imaging research. Our goal was to predict the presence of 9 different conditions from chest X-rays (e.g., Cardiomegaly, Lung Opacity, Pleural Effusion) using supervised learning, submitting a CSV with probability predictions for each finding per image. Evaluation was based on mean squared error (MSE), scaled by class-wise variance.</p>
+
+      <p>Our team worked on the design, training, and evaluation of multiple deep learning models to identify optimal architecture-performance trade-offs:</p>
+      <ul>
+        <li>Vanilla CNN: Built and trained a baseline convolutional model to establish a performance benchmark.</li>
+        <li>ResNet (Residual Networks): Implemented deeper architectures using skip connections (ResNet-18 and ResNet-50) to capture complex radiographic patterns.</li>
+        <li>DenseNet: Leveraged densely connected CNNs to enhance feature propagation and minimize vanishing gradients in deeper layers.</li>
+      </ul>
+
+      <p>To optimize model performance, we iteratively tuned:</p>
+      <ul>
+        <li>Learning rate schedules (step decay, cosine annealing)</li>
+        <li>Optimizer selection (Adam vs. SGD with momentum)</li>
+        <li>Batch size, weight decay, and dropout rates to reduce overfitting</li>
+        <li>Loss functions (tested both BCEWithLogits and class-weighted variants due to label imbalance)</li>
+      </ul>
+
+      <p>We also incorporated early stopping and model checkpointing to manage training stability and maximize generalization performance.</p>
+
+      <div class="tag-row">
+        <span class="tag">Python</span><span class="tag">Deep Learning</span><span class="tag">Medical Imaging</span><span class="tag">scikit-learn</span>
+      </div>
+
+      <a class="project-back" href="index.html#portfolio">← Back to Portfolio</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Karen Zhou</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

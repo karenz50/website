@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karen Zhou | Fire Detection Using Keras</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-brand">Karen Zhou</a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#tools">Tools/Platforms</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li class="nav-dropdown">
+        <a href="index.html#portfolio">Portfolio</a>
+        <ul class="dropdown-menu">
+          <li><a href="polyquarket.html">Polyquarket</a></li>
+          <li><a href="chexpert.html">CheXpert Competition</a></li>
+          <li><a href="light-curves.html">Photometric Light Curves</a></li>
+          <li><a href="tower-hopper.html">Tower Hopper</a></li>
+          <li><a href="robustness.html">Robustness of Machine Perception</a></li>
+          <li><a href="fire-detection.html">Fire Detection Using Keras</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#extracurriculars">Extracurriculars/Honors</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-stack">
+      <div class="project-card">
+        <h1>Fire Detection Using Keras</h1>
+        <p class="project-subtitle">AP Research Project (2022-23)</p>
+      </div>
+      <div class="project-bar"></div>
+    </div>
+  </section>
+
+  <!-- PROJECT CONTENT -->
+  <section class="project-content">
+    <div class="container project-container">
+      <p>For my AP Research class, I tried to answer the following: "How can machine learning best be utilized to accurately classify video footage of forest fires on the average laptop computer?" In order to do so, I developed and implemented a convolutional neural network (CNN) in Google Colab using the Keras library. I also made use of methods in other libraries such as TensorFlow, NumPy, OpenCV, and matplotlib. In the collection of images below, I have included figures from my paper.</p>
+
+      <p>The CNN employed a binary classification method in order to identify images from either a fire or non-fire class, and I ended up training four different models in order to test optimal performance. In total, the final model trained on 3,760 images taken from Kaggle and other open source datasets. The highest F1 scores achieved was 0.96 for both the fire and non-fire classes. See the <a href="#">fire_detection GitHub repository</a> for more information.</p>
+
+      <div class="tag-row">
+        <span class="tag">Python</span><span class="tag">C/C++</span><span class="tag">BigQuery</span><span class="tag">Keras</span>
+      </div>
+
+      <div class="project-tools">
+        <h2 class="project-tools-title">Tools</h2>
+        <div class="project-tools-row">
+          <div class="project-tool-tile">TensorFlow</div>
+          <div class="project-tool-tile">Keras</div>
+          <div class="project-tool-tile">NumPy</div>
+          <div class="project-tool-tile">OpenCV</div>
+          <div class="project-tool-tile">matplotlib</div>
+        </div>
+      </div>
+
+      <div class="project-gallery">
+        <h2 class="project-gallery-title">Gallery</h2>
+        <div class="project-gallery-grid">
+          <figure class="project-gallery-item">
+            <pre class="code-block"><span class="kw">class</span> <span class="fn">FireDetectionNet</span>:
+    <span class="kw">@staticmethod</span>
+
+    <span class="kw">def</span> <span class="fn">build</span>(width, height, depth, classes):
+        model = Sequential()
+        inputShape = (height, width, depth)
+        chanDim = -1
+
+        model.add(SeparableConv2D(16, (7, 7), padding=<span class="st">"same"</span>,
+            input_shape=inputShape))
+        model.add(Activation(<span class="st">"relu"</span>))
+        model.add(BatchNormalization(axis=chanDim))
+        model.add(MaxPooling2D(pool_size=(2, 2)))
+
+        model.add(SeparableConv2D(32, (3, 3), padding=<span class="st">"same"</span>))
+        model.add(Activation(<span class="st">"relu"</span>))
+        model.add(BatchNormalization(axis=chanDim))
+        model.add(SeparableConv2D(32, (3, 3), padding=<span class="st">"same"</span>))
+        model.add(Activation(<span class="st">"relu"</span>))
+        model.add(BatchNormalization(axis=chanDim))
+        model.add(MaxPooling2D(pool_size=(2, 2)))
+
+        model.add(Flatten())
+        model.add(Dense(128))
+        model.add(Activation(<span class="st">"relu"</span>))
+        model.add(BatchNormalization())
+        model.add(Dropout(0.5))
+
+        model.add(Dense(classes))
+        model.add(Activation(<span class="st">"softmax"</span>))
+
+        <span class="kw">return</span> model</pre>
+            <figcaption>Fig. 1<br>CNN layer implementation</figcaption>
+          </figure>
+          <figure class="project-gallery-item">
+            <pre class="code-block"><span class="kw">import</span> cv2
+<span class="kw">import</span> numpy <span class="kw">as</span> np
+<span class="kw">from</span> keras.models <span class="kw">import</span> load_model
+
+<span class="kw">def</span> <span class="fn">load_video</span>(file_name):
+    cam = cv2.VideoCapture(<span class="st">"/content/"</span> + file_name)
+    currentframe = 0
+    data = []
+
+    <span class="kw">while</span> True:
+        ret, frame = cam.read()
+        <span class="kw">if</span> ret:
+            image = cv2.resize(frame, (128, 128))
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+            data.append(image)
+        <span class="kw">else</span>:
+            <span class="kw">break</span>
+
+    data = np.array(data, dtype=<span class="st">"float32"</span>)
+
+    cam.release()
+    cv2.destroyAllWindows()
+
+    <span class="kw">return</span> data / 255
+
+<span class="kw">def</span> <span class="fn">make_predictions</span>(data, model_file):
+    BATCH_SIZE = int((data.size) / 10)
+    model = load_model(<span class="st">'/content/'</span> + model_file)
+    predictions = model.predict(data, batch_size=BATCH_SIZE)
+
+    <span class="kw">return</span> predictions</pre>
+            <figcaption>Fig. 2<br>Video analysis implementation</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <a class="project-back" href="index.html#portfolio">← Back to Portfolio</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Karen Zhou</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
