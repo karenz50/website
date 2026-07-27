@@ -363,32 +363,46 @@ a:hover { text-decoration: underline; }
 /* ============================================================
    Skills
    ============================================================ */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 1.4rem 3rem;
-}
-.skill-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: .4rem;
-}
-.skill-name { font-size: .86rem; font-weight: 400; color: var(--black); }
-.skill-pct  { font-size: .78rem; color: var(--muted); font-weight: 300; }
-.skill-bar {
-  height: 4px;
-  background: var(--border);
-  border-radius: 2px;
+.skills-section { padding: 0; }
+.skills-section .container { padding-top: 70px; padding-bottom: 2rem; max-width: 1120px; }
+
+.skills-bg {
+  position: relative;
   overflow: hidden;
+  padding: 2.4rem 1.5rem 2.8rem;
 }
-.skill-fill {
-  height: 100%;
-  width: 0;
-  border-radius: 2px;
-  background: var(--black);
-  transition: width 1s cubic-bezier(.4,0,.2,1);
+.skills-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('skill-background.png') center/180% no-repeat;
+  filter: grayscale(1) brightness(.55) contrast(.4);
+  z-index: 0;
 }
-.skill-fill.animated { width: var(--w); }
+
+.skills-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.6rem 2rem;
+}
+.skill-tile {
+  background: rgba(150, 150, 150, .55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2.2rem 1.5rem;
+  min-height: 110px;
+}
+.skill-tile span {
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: .04em;
+}
+.skill-tile span u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
 
 /* ============================================================
    Cards (Extracurriculars)

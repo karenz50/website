@@ -29,18 +29,6 @@ const fadeObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 fadeEls.forEach(el => fadeObserver.observe(el));
 
-// Skill bars animate on scroll
-const skillFills = document.querySelectorAll('.skill-fill');
-const skillObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('animated');
-      skillObserver.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.3 });
-skillFills.forEach(el => skillObserver.observe(el));
-
 // Contact form mock submit
 function handleSubmit(e) {
   e.preventDefault();
