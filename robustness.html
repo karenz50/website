@@ -44,23 +44,26 @@
         <h1>An Investigation of the Robustness of Perception Based Control</h1>
         <p class="project-subtitle">FSRI Research Project (2023)</p>
       </div>
-      <div class="project-bar"></div>
     </div>
   </section>
 
   <!-- PROJECT CONTENT -->
   <section class="project-content">
+    <div class="project-bar"></div>
     <div class="container project-container">
       <p>Modern day control systems such as autonomous driving typically utilize image and video signals to produce feedback control. However, adversarial noise can often interfere with label prediction and thus lead to decreased robustness. This project aims to investigate adversarial robustness of convolutional neural network (CNN) based machine perception for identifying the position of a driving car. Certain areas of machine perception for control are robust to some objects but may be fragile towards others. Therefore, we tested which type of noise affected the model the most and retrained the model with the adversarial noise in mind.</p>
 
       <p>We generated a dataset containing 2,000 images with 50 different calculated trajectories for a car's position and 40 base images containing a car on a road. Then, we built and trained our convolutional neural network with four different layers in order to obtain 52,673 trainable parameters.</p>
 
-      <div class="project-figure wide">
-        <img src="portfolio-imgs/fsri-presentation.png" alt="An Investigation of the Robustness of Machine Perception for Control — research poster" />
-      </div>
-
       <div class="tag-row">
         <span class="tag">Python</span><span class="tag">CNN</span><span class="tag">Adversarial ML</span><span class="tag">Control Systems</span>
+      </div>
+
+      <div class="project-gallery">
+        <h2 class="project-gallery-title">Gallery</h2>
+        <div class="project-figure wide">
+          <img src="portfolio-imgs/fsri-presentation.png" alt="An Investigation of the Robustness of Machine Perception for Control — research poster" />
+        </div>
       </div>
 
       <a class="project-back" href="index.html#portfolio">← Back to Portfolio</a>
