@@ -295,6 +295,16 @@ a:hover { text-decoration: underline; }
 }
 .timeline-item.visible { opacity: 1; transform: none; }
 
+/* ============================================================
+   Generic reveal-on-scroll (applied via JS site-wide)
+   ============================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.visible { opacity: 1; transform: none; }
+
 .timeline-left {
   padding-right: 24px;
   text-align: right;
@@ -361,6 +371,7 @@ a:hover { text-decoration: underline; }
    Tags
    ============================================================ */
 .tag-row { display: flex; flex-wrap: wrap; gap: .4rem; }
+.project-content .tag { background: var(--bg-alt); color: var(--mid); }
 .tag {
   font-size: .68rem;
   font-weight: 400;
@@ -496,12 +507,6 @@ a:hover { text-decoration: underline; }
 .portfolio-card:hover { transform: translateY(-4px); box-shadow: 0 10px 36px rgba(0,0,0,.14); }
 
 .portfolio-preview { height: 220px; background-size: cover; background-position: center; }
-.p1 { background-image: url('portfolio-imgs/polyquarket.png'); }
-.p2 { background-image: url('portfolio-imgs/chexpert.png'); }
-.p3 { background-image: url('portfolio-imgs/light-curve.png'); }
-.p4 { background-image: url('portfolio-imgs/towerclimber.png'); }
-.p5 { background-image: url('portfolio-imgs/self-driving.png'); }
-.p6 { background-image: url('portfolio-imgs/github.png'); }
 
 .portfolio-body { padding: 1.5rem 1.6rem; }
 .portfolio-body h3 { font-size: .95rem; font-weight: 500; color: var(--black); margin-bottom: .6rem; }
@@ -699,7 +704,7 @@ footer {
   color: #465272;
   line-height: 1.85;
 }
-.project-content .tag-row { margin-top: 2rem; }
+.project-content .tag-row { margin-bottom: 2rem; }
 .project-back {
   display: inline-block;
   margin-top: 1rem;

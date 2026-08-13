@@ -29,6 +29,44 @@ const fadeObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 fadeEls.forEach(el => fadeObserver.observe(el));
 
+// Generic reveal-on-scroll — applies the same fade/slide-up animation
+// to key elements across every page (hero cards, section titles, grids,
+// project page content, etc.) so it replays on every navigation/reload.
+const revealSelector = [
+  '.hero-stack',
+  '.intro-heading',
+  '.intro-text',
+  '.intro-cta',
+  '.section-title',
+  '.tool-category',
+  '.skill-tile',
+  '.contact-item'
+].join(', ');
+const revealEls = document.querySelectorAll(revealSelector);
+revealEls.forEach(el => el.classList.add('reveal'));
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((e) => {
+    if (e.isIntersecting) {
+      const siblings = [...e.target.parentElement.children].filter(c => c.classList.contains('reveal'));
+      const idx = siblings.indexOf(e.target);
+      setTimeout(() => e.target.classList.add('visible'), idx * 70);
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+revealEls.forEach(el => revealObserver.observe(el));
+
+// Some browsers restore a page from back/forward cache instead of reloading
+// it (e.g. hitting the back button), which skips this script entirely and
+// would leave things exactly as they were — replay the animations in that case.
+window.addEventListener('pageshow', (event) => {
+  if (!event.persisted) return;
+  document.querySelectorAll('.reveal.visible').forEach(el => el.classList.remove('visible'));
+  document.querySelectorAll('.timeline-item.visible, .card.visible').forEach(el => el.classList.remove('visible'));
+  revealEls.forEach(el => revealObserver.observe(el));
+  fadeEls.forEach(el => fadeObserver.observe(el));
+});
+
 // Contact form mock submit
 function handleSubmit(e) {
   e.preventDefault();
