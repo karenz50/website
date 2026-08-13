@@ -167,7 +167,7 @@ a:hover { text-decoration: underline; }
   height: 72px;
   max-width: 940px;
   width: 100%;
-  margin: -80px auto 3rem;
+  margin: -80px auto 4.5rem;
   background: #b3b3b3;
 }
 
@@ -225,7 +225,7 @@ a:hover { text-decoration: underline; }
 .section-alt { background: var(--bg-alt); }
 .section-white { background: #ffffff; }
 
-.intro-section { padding: 80px 1.5rem; background: var(--bg-alt); }
+.intro-section { padding: 80px 1.5rem 120px; background: var(--bg-alt); }
 .intro-container { text-align: center; max-width: 580px; }
 .intro-heading {
   font-family: 'Poppins', sans-serif;
@@ -653,6 +653,7 @@ footer {
   text-align: center;
   box-shadow: 0 4px 20px rgba(0,0,0,.18);
 }
+.project-card-lg { padding: 5.4rem 3rem; }
 .project-card h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.9rem;
@@ -661,7 +662,12 @@ footer {
   margin-bottom: .8rem;
   letter-spacing: -.01em;
 }
-.project-card h1.muted-title { color: var(--mid); }
+.project-card h1.muted-title {
+  color: var(--mid);
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
 .project-subtitle {
   font-size: .95rem;
   font-weight: 300;
@@ -712,7 +718,7 @@ footer {
   font-weight: 400;
   letter-spacing: .04em;
   padding: .55rem 1.1rem;
-  margin-bottom: .5rem;
+  margin: 0 .6rem .5rem 0;
 }
 .project-btn:hover { background: var(--border); color: var(--black); text-decoration: none; }
 
@@ -754,6 +760,13 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.6rem;
 }
+.project-gallery-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--border);
+}
 .project-gallery-item figcaption {
   font-size: .8rem;
   font-weight: 500;
@@ -767,8 +780,10 @@ footer {
   font-size: .72rem;
   line-height: 1.6;
   padding: 1.2rem;
-  overflow-x: auto;
+  overflow: auto;
   white-space: pre;
+  height: 420px;
+  box-sizing: border-box;
 }
 .code-block .kw { color: #cba6f7; }
 .code-block .fn { color: #89b4fa; }
