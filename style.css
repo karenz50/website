@@ -223,6 +223,7 @@ a:hover { text-decoration: underline; }
    ============================================================ */
 .section { padding: 100px 1.5rem; }
 .section-alt { background: var(--bg-alt); }
+.section-white { background: #ffffff; }
 
 .intro-section { padding: 80px 1.5rem; background: var(--bg-alt); }
 .intro-container { text-align: center; max-width: 580px; }
@@ -238,6 +239,8 @@ a:hover { text-decoration: underline; }
   font-size: 1.05rem;
   color: var(--mid);
   line-height: 1.8;
+  max-width: 470px;
+  margin: 0 auto;
 }
 .intro-cta {
   display: inline-block;
@@ -407,12 +410,12 @@ a:hover { text-decoration: underline; }
    Skills
    ============================================================ */
 .skills-section { padding: 0; }
-.skills-section .container { padding-top: 70px; padding-bottom: 2rem; max-width: 1120px; }
+.skills-section .container { padding-top: 56px; padding-bottom: .7rem; max-width: 1120px; }
 
 .skills-bg {
   position: relative;
   overflow: hidden;
-  padding: 2.4rem 1.5rem 2.8rem;
+  padding: 2.2rem 1.5rem 2.4rem;
 }
 .skills-bg::before {
   content: '';
@@ -428,7 +431,7 @@ a:hover { text-decoration: underline; }
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.6rem 2rem;
+  gap: 1.3rem 1.4rem;
 }
 .skill-tile {
   background: rgba(150, 150, 150, .55);
@@ -436,12 +439,12 @@ a:hover { text-decoration: underline; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2.2rem 1.5rem;
-  min-height: 110px;
+  padding: 1.4rem 1.5rem;
+  min-height: 78px;
 }
 .skill-tile span {
   color: var(--white);
-  font-size: 1.1rem;
+  font-size: .95rem;
   font-weight: 400;
   letter-spacing: .04em;
 }
@@ -453,20 +456,19 @@ a:hover { text-decoration: underline; }
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  gap: 2.4rem 2rem;
 }
 .card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.8rem;
-  box-shadow: var(--shadow);
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity .5s ease, transform .5s ease, box-shadow .25s ease;
+  transition: opacity .5s ease, transform .5s ease;
 }
 .card.visible { opacity: 1; transform: none; }
-.card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,.12); }
 
 .card-icon { font-size: 1.5rem; margin-bottom: .8rem; }
 .card h3 { font-size: .95rem; font-weight: 500; color: var(--black); margin-bottom: .5rem; }
@@ -518,6 +520,12 @@ a:hover { text-decoration: underline; }
 /* ============================================================
    Contact
    ============================================================ */
+.contact-divider {
+  height: 1px;
+  background: var(--border);
+  max-width: 200px;
+  margin: 0 auto 2.5rem;
+}
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -653,6 +661,7 @@ footer {
   margin-bottom: .8rem;
   letter-spacing: -.01em;
 }
+.project-card h1.muted-title { color: var(--mid); }
 .project-subtitle {
   font-size: .95rem;
   font-weight: 300;
@@ -808,8 +817,8 @@ footer {
 }
 .portfolio-list-text h3 {
   font-size: 1.15rem;
-  font-weight: 500;
-  color: var(--black);
+  font-weight: 400;
+  color: var(--mid);
   margin-bottom: 1rem;
   line-height: 1.4;
 }
