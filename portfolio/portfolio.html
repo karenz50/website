@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karen Zhou | Portfolio</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="../index.html" class="nav-brand">Karen Zhou</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#education">Education</a></li>
+      <li><a href="../index.html#tools">Tools/Platforms</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li class="nav-dropdown">
+        <a href="portfolio.html">Portfolio</a>
+        <ul class="dropdown-menu">
+          <li><a href="polyquarket.html">Polyquarket</a></li>
+          <li><a href="chexpert.html">CheXpert Competition</a></li>
+          <li><a href="light-curves.html">Photometric Light Curves</a></li>
+          <li><a href="tower-hopper.html">Tower Hopper</a></li>
+          <li><a href="robustness.html">Robustness of Machine Perception</a></li>
+          <li><a href="fire-detection.html">Fire Detection Using Keras</a></li>
+        </ul>
+      </li>
+      <li><a href="../index.html#extracurriculars">Extracurriculars/Honors</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-stack">
+      <div class="project-card">
+        <h1>Portfolio</h1>
+        <p class="project-subtitle">Below are selected projects that showcase my work across machine learning, software engineering, data analysis, and technical design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO LIST -->
+  <section class="project-content">
+    <div class="project-bar"></div>
+    <div class="container project-container portfolio-list">
+
+      <div class="portfolio-list-item">
+        <div class="portfolio-list-text">
+          <span class="portfolio-num">01</span>
+          <h3>Polyquarket</h3>
+          <p>A prediction market platform inspired by Polymarket and Kalshi, built for a University of Chicago Physics PhD department event. Users trade on outcome probabilities across department-specific questions using play money, with real-time market pricing, automated resolution, and a live leaderboard to drive engagement in forecasting event outcomes.</p>
+          <a class="project-btn" href="polyquarket.html">Learn More</a>
+        </div>
+        <div class="portfolio-list-image">
+          <img src="../portfolio-imgs/polyquarket.png" alt="Polyquarket" />
+        </div>
+      </div>
+
+      <div class="portfolio-list-item">
+        <div class="portfolio-list-text">
+          <span class="portfolio-num">02</span>
+          <h3>CheXpert Competition</h3>
+          <p>Collaborated on a machine learning team project focused on automated anomaly detection in chest radiographs using the CheXpert dataset. Developed predictive models to identify key clinical findings such as Cardiomegaly, Lung Opacity, and Pleural Effusion across thousands of chest X-rays. Employed advanced ML techniques to minimize mean squared error (MSE) across multiple diagnosis labels, with scores normalized by category variance. Gained hands-on experience with medical imaging data, evaluation pipelines, and collaborative model development in a high-stakes, real-world healthcare context.</p>
+          <a class="project-btn" href="chexpert.html">Learn More</a>
+        </div>
+        <div class="portfolio-list-image">
+          <img src="../portfolio-imgs/chexpert.png" alt="CheXpert Competition" />
+        </div>
+      </div>
+
+      <div class="portfolio-list-item">
+        <div class="portfolio-list-text">
+          <span class="portfolio-num">03</span>
+          <h3>Unsupervised Machine Learning for Analysis of Young Star Photometric Light Curves (2024)</h3>
+          <p>I analyzed photometric light curves of young stars using multiple unsupervised machine learning techniques to further understanding of early star formation processes under the guidance of Professor Lynne Hillenbrand in the PMA department. In this project, I worked with data from the Kepler/K2 and Transiting Exoplanet Survey Satellite (TESS) NASA missions, which include high-precision photometry for thousands of stars in the K2 dataset and over 200,000 stars in the TESS dataset to extract relevant features.</p>
+          <a class="project-btn" href="light-curves.html">Learn More</a>
+        </div>
+        <div class="portfolio-list-image">
+          <img src="../portfolio-imgs/light-curve.png" alt="Photometric Light Curves" />
+        </div>
+      </div>
+
+      <div class="portfolio-list-item">
+        <div class="portfolio-list-text">
+          <span class="portfolio-num">04</span>
+          <h3>Tower Hopper (Platformer Game)</h3>
+          <p>Designed and developed a fully functional 2D platformer game in a team of 3 where a treasure hunter ascends a dynamic tower by jumping between walls while avoiding enemies and obstacles. Implemented game physics including gravity, collision detection, and surface friction types (normal, icy, sticky) to affect movement. Built enemy AI (ghosts) with chase behavior and damage mechanics with temporary invincibility.</p>
+          <a class="project-btn" href="tower-hopper.html">Learn More</a>
+        </div>
+        <div class="portfolio-list-image">
+          <img src="../portfolio-imgs/towerclimber.png" alt="Tower Hopper" />
+        </div>
+      </div>
+
+      <div class="portfolio-list-item">
+        <div class="portfolio-list-text">
+          <span class="portfolio-num">05</span>
+          <h3>An Investigation of the Robustness of Perception Based Control</h3>
+          <p>Modern day control systems such as autonomous driving typically utilize image and video signals to produce feedback control. However, adversarial noise can often interfere with label prediction and thus lead to decreased robustness. This project investigates adversarial robustness of convolutional neural network (CNN) based machine perception for identifying the position of a driving car.</p>
+          <a class="project-btn" href="robustness.html">Learn More</a>
+        </div>
+        <div class="portfolio-list-image">
+          <img src="../portfolio-imgs/self-driving.png" alt="Robustness of Machine Perception for Control" />
+        </div>
+      </div>
+
+      <div class="portfolio-list-item">
+        <div class="portfolio-list-text">
+          <span class="portfolio-num">06</span>
+          <h3>Fire Detection Using Keras</h3>
+          <p>For my AP Research class, I developed and implemented a convolutional neural network (CNN) in Google Colab using the Keras library to classify video footage of forest fires on the average laptop computer. The final model trained on 3,760 images taken from Kaggle and other open source datasets, achieving F1 scores of 0.96 for both the fire and non-fire classes.</p>
+          <a class="project-btn" href="fire-detection.html">Learn More</a>
+        </div>
+        <div class="portfolio-list-image">
+          <img src="../portfolio-imgs/fire.png" alt="Fire Detection Using Keras" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Karen Zhou</p>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>
