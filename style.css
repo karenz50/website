@@ -366,6 +366,24 @@ a:hover { text-decoration: underline; }
   line-height: 1.8;
   margin-bottom: .8rem;
 }
+.timeline-right .coursework-heading {
+  margin-bottom: .25rem;
+  font-weight: 500;
+}
+.coursework-list {
+  margin: 0 0 1rem 1.15rem;
+  columns: 2;
+  column-gap: 2rem;
+}
+.coursework-list li {
+  break-inside: avoid;
+  color: #465272;
+  font-size: .82rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: .25rem;
+  padding-left: .15rem;
+}
 
 /* ============================================================
    Tags
@@ -612,6 +630,7 @@ footer {
     grid-column: 2;
     grid-row: 2;
   }
+  .coursework-list { columns: 1; }
 
   .portfolio-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
