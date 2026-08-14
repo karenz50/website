@@ -477,7 +477,12 @@ a:hover { text-decoration: underline; }
   font-weight: 400;
   letter-spacing: .04em;
 }
-.skill-tile span u { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.skill-tile span a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
 
 /* ============================================================
    Cards (Extracurriculars)
