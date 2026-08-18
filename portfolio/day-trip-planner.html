@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <title>Karen Zhou | Day Trip Planner</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="../index.html" class="nav-brand">Karen Zhou</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#education">Education</a></li>
+      <li><a href="../index.html#tools">Tools/Platforms</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#extracurriculars">Extracurriculars/Honors</a></li>
+      <li class="nav-dropdown">
+        <a href="portfolio.html">Portfolio</a>
+        <ul class="dropdown-menu">
+          <li><a href="day-trip-planner.html">Day Trip Planner</a></li>
+          <li><a href="polyquarket.html">Polyquarket</a></li>
+          <li><a href="chexpert.html">CheXpert Competition</a></li>
+          <li><a href="light-curves.html">Photometric Light Curves</a></li>
+          <li><a href="tower-hopper.html">Tower Hopper</a></li>
+          <li><a href="robustness.html">Robustness of Machine Perception</a></li>
+          <li><a href="fire-detection.html">Fire Detection Using Keras</a></li>
+        </ul>
+      </li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-stack">
+      <div class="project-card">
+        <h1>Day Trip Planner</h1>
+        <p class="project-subtitle">Multi Agent AI System for Personalized Trip Planning</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT CONTENT -->
+  <section class="project-content section-white">
+    <div class="project-bar"></div>
+    <div class="container project-container">
+      <div class="tag-row">
+        <span class="tag">AI Agents</span><span class="tag">Multi Agent Orchestration</span><span class="tag">Claude Agent SDK</span><span class="tag">FastAPI</span><span class="tag">Structured Outputs</span><span class="tag">Server-Sent Events</span>
+      </div>
+
+      <p>Built a full stack, multi agent AI system that converts natural language travel preferences into multiple personalized, validated day trip itineraries. Specialized LLM agents handle preference interpretation, activity and restaurant research, contextual reasoning, itinerary criticism, and iterative revision, exchanging schema validated outputs through Pydantic models while Python and AnyIO coordinate concurrent, dependency aware execution. A real time event bus streams agent status, tasks, and validation results to a React interface via Server-Sent Events.</p>
+
+      <p>The architecture separates probabilistic reasoning from factual retrieval and constraint enforcement. Google Places supplies verified venue details, coordinates, ratings, and hours; routing APIs provide real travel time and distance data; and Open-Meteo adds weather context specific to location and date. A deterministic scheduling engine combines these sources with user constraints, including budget, meal windows, transportation, pace, must do locations, and trip duration, to construct distinct itinerary variants. A Critic agent then evaluates each schedule for feasibility and experience quality, triggering bounded revision loops that remove problematic stops and rebuild the plan.</p>
+
+      <ul>
+        <li>Designed a modular multi agent workflow (Coordinator, Activity Discovery, Food Discovery, Context, Critic, and Trip Briefing agents) using the Claude Agent SDK with structured JSON generation, retry handling, and Pydantic schema validation.</li>
+        <li>Used AnyIO task groups to run independent research agents and itinerary variant generation concurrently, reducing end to end planning latency.</li>
+        <li>Grounded model outputs in external, real world data via Google Places, traffic aware routing/geocoding, and Open-Meteo weather to reduce hallucinations and enforce real world constraints.</li>
+        <li>Built a deterministic, constraint aware scheduler that scores itinerary candidates across preference alignment, geographic efficiency, quality, diversity, budget fit, and weather suitability.</li>
+        <li>Implemented a revision loop between the Planner and Critic agents that validates generated schedules, identifies high severity problems, and automatically regenerates improved itineraries.</li>
+        <li>Built a FastAPI backend with asynchronous background execution, graceful task cancellation, structured error propagation, and Server-Sent Events streaming.</li>
+        <li>Created a real time React/Vite frontend that visualizes agent activity, communication between agents, validation outcomes, and multiple itinerary alternatives as they're generated.</li>
+        <li>Added a dedicated briefing agent that converts finalized itineraries into downloadable one page traveler handouts, with provider fallbacks so the app degrades gracefully without paid APIs.</li>
+      </ul>
+
+      <a class="project-btn" href="https://github.com/karenz50/daytrip-planner" target="_blank">Code</a>
+      <a class="project-back" href="portfolio.html">← Back to Portfolio</a>
+
+      <div class="project-gallery">
+        <h2 class="project-gallery-title">Gallery</h2>
+        <div class="project-gallery-grid">
+          <figure class="project-gallery-item">
+            <img src="../portfolio-imgs/day-trip-planner/day-trip-planner.png" alt="Day Trip Planner preferences form" />
+            <figcaption>Trip preferences form</figcaption>
+          </figure>
+          <figure class="project-gallery-item">
+            <img src="../portfolio-imgs/day-trip-planner/agents-in-progress.png" alt="Day Trip Planner live agent orchestration view" />
+            <figcaption>Live agent orchestration</figcaption>
+          </figure>
+          <figure class="project-gallery-item">
+            <img src="../portfolio-imgs/day-trip-planner/results-pg1.png" alt="Day Trip Planner itinerary results with weather guidance and feasibility validation" />
+            <figcaption>Validated itinerary with weather guidance</figcaption>
+          </figure>
+          <figure class="project-gallery-item">
+            <img src="../portfolio-imgs/day-trip-planner/results-pg2.png" alt="Day Trip Planner itinerary timeline with stop details and alternatives" />
+            <figcaption>Itinerary timeline with alternatives</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Karen Zhou</p>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>

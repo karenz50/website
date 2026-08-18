@@ -22,6 +22,7 @@
       <li class="nav-dropdown">
         <a href="portfolio.html">Portfolio</a>
         <ul class="dropdown-menu">
+          <li><a href="day-trip-planner.html">Day Trip Planner</a></li>
           <li><a href="polyquarket.html">Polyquarket</a></li>
           <li><a href="chexpert.html">CheXpert Competition</a></li>
           <li><a href="light-curves.html">Photometric Light Curves</a></li>
@@ -56,9 +57,9 @@
         <span class="tag">Python</span><span class="tag">Deep Learning</span><span class="tag">Medical Imaging</span><span class="tag">scikit-learn</span>
       </div>
 
-      <p>This project tackled automated anomaly detection in chest radiographs using over 100 thousand images from the CheXpert dataset, a large-scale labeled dataset curated for real-world medical imaging research. Our goal was to predict the presence of 9 different conditions from chest X-rays (e.g., Cardiomegaly, Lung Opacity, Pleural Effusion) using supervised learning, submitting a CSV with probability predictions for each finding per image. Evaluation was based on mean squared error (MSE), scaled by class-wise variance.</p>
+      <p>This project tackled automated anomaly detection in chest radiographs using over 100 thousand images from the CheXpert dataset, a large scale labeled dataset curated for real world medical imaging research. Our goal was to predict the presence of 9 different conditions from chest X-rays (e.g., Cardiomegaly, Lung Opacity, Pleural Effusion) using supervised learning, submitting a CSV with probability predictions for each finding per image. Evaluation was based on mean squared error (MSE), scaled by class wise variance.</p>
 
-      <p>Our team worked on the design, training, and evaluation of multiple deep learning models to identify optimal architecture-performance trade-offs:</p>
+      <p>Our team worked on the design, training, and evaluation of multiple deep learning models to identify optimal architecture performance trade offs:</p>
       <ul>
         <li>Vanilla CNN: Built and trained a baseline convolutional model to establish a performance benchmark.</li>
         <li>ResNet (Residual Networks): Implemented deeper architectures using skip connections (ResNet-18 and ResNet-50) to capture complex radiographic patterns.</li>
@@ -70,7 +71,7 @@
         <li>Learning rate schedules (step decay, cosine annealing)</li>
         <li>Optimizer selection (Adam vs. SGD with momentum)</li>
         <li>Batch size, weight decay, and dropout rates to reduce overfitting</li>
-        <li>Loss functions (tested both BCEWithLogits and class-weighted variants due to label imbalance)</li>
+        <li>Loss functions (tested both BCEWithLogits and class weighted variants due to label imbalance)</li>
       </ul>
 
       <p>We also incorporated early stopping and model checkpointing to manage training stability and maximize generalization performance.</p>
@@ -84,11 +85,11 @@
       <p>For the evaluation phase, we:</p>
       <ul>
         <li>Created scripts to compute scaled MSE across each of the 10 clinical labels.</li>
-        <li>Visualized label-wise prediction distributions and investigated error trends across patient subgroups.</li>
+        <li>Visualized label wise prediction distributions and investigated error trends across patient subgroups.</li>
         <li>Identified which conditions were most prone to false positives or false negatives and refined models accordingly.</li>
       </ul>
 
-      <p>This competition provided a hands-on opportunity to apply deep learning to a high-impact healthcare domain. We gained practical experience working with multi-label classification, medical image preprocessing, model performance debugging and optimization, and team-based ML pipeline development.</p>
+      <p>This competition provided a hands on opportunity to apply deep learning to a high impact healthcare domain. We gained practical experience working with multi label classification, medical image preprocessing, model performance debugging and optimization, and team based ML pipeline development.</p>
 
       <a class="project-btn" href="https://github.com/karenz50/cs156b" target="_blank">Code</a>
 
