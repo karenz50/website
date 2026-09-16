@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <title>Karen Zhou | Stock Analysis</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="../index.html" class="nav-brand">Karen Zhou</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#education">Education</a></li>
+      <li><a href="../index.html#tools">Tools/Platforms</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#extracurriculars">Extracurriculars/Honors</a></li>
+      <li class="nav-dropdown">
+        <a href="portfolio.html">Portfolio</a>
+        <ul class="dropdown-menu">
+          <li><a href="stock-analysis.html">Stock Analysis</a></li>
+          <li><a href="day-trip-planner.html">Day Trip Planner</a></li>
+          <li><a href="polyquarket.html">Polyquarket</a></li>
+          <li><a href="chexpert.html">CheXpert Competition</a></li>
+          <li><a href="light-curves.html">Photometric Light Curves</a></li>
+          <li><a href="tower-hopper.html">Tower Hopper</a></li>
+          <li><a href="robustness.html">Robustness of Machine Perception</a></li>
+          <li><a href="fire-detection.html">Fire Detection Using Keras</a></li>
+        </ul>
+      </li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <div class="project-hero-bg"></div>
+    <div class="project-hero-stack">
+      <div class="project-card">
+        <h1>Stock Analysis</h1>
+        <p class="project-subtitle">Multiagent AI Investment Research Platform</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT CONTENT -->
+  <section class="project-content section-white">
+    <div class="project-bar"></div>
+    <div class="container project-container">
+      <div class="tag-row">
+        <span class="tag">AI Agents</span><span class="tag">Multi Agent Orchestration</span><span class="tag">Claude API</span><span class="tag">Flask</span><span class="tag">JSON Schema</span><span class="tag">Concurrent Processing</span><span class="tag">Options</span>
+      </div>
+
+      <p>Built a multiagent AI platform that automates investment research across sector based equity watchlists. The project combines LLM reasoning and summarization with financial data pipelines, quantitative indicators, and historical backtesting to connect company developments, price behavior, and market conditions.</p>
+
+      <p>Designed a hierarchical orchestration workflow in Python using the Claude API. Specialized agents analyze technical signals, corporate activity, market sentiment, and historical evidence, while a portfolio manager agent consolidates their findings into an executive summary. Ticker research runs concurrently through a thread pool, with explicit dependencies between stages, including passing technical signals into the review agent for assessment.</p>
+
+      <p>The AI architecture includes:</p>
+      <ul>
+        <li><strong>Task decomposition and specialized prompting:</strong> Defined distinct agent responsibilities and financial context to keep each model call focused on a bounded research task.</li>
+        <li><strong>Structured outputs:</strong> Used JSON Schema constrained responses and parsed JSON results to connect model outputs to downstream analysis, report generation, and dashboard components.</li>
+        <li><strong>Tool use infrastructure:</strong> Implemented a reusable Claude client with a bounded tool calling loop that dispatches requested functions, returns results to the model, and handles tool execution failures.</li>
+        <li><strong>Grounded financial interpretation:</strong> Supplied agents with programmatically retrieved market data, SEC filings, and computed indicators so their analysis references explicit inputs.</li>
+        <li><strong>Hybrid AI and quantitative processing:</strong> Calculated technical indicators and backtest statistics in Python, then used LLMs to interpret the evidence and communicate findings.</li>
+        <li><strong>Context aggregation and synthesis:</strong> Compressed specialist results into a structured context for the portfolio manager, enabling synthesis across companies and market conditions.</li>
+        <li><strong>Operational controls:</strong> Added configurable models, token usage and estimated cost tracking, bounded response budgets, error handling, and deterministic fallback paths.</li>
+      </ul>
+
+      <p>The financial pipeline evaluates RSI, Bollinger Bands, moving averages, and 52 week price positioning alongside insider transactions, share repurchase spending, earnings events, and news. Cross asset indicators provide context on market risk appetite, while historical signal backtests report hit rates and sample sizes to support evidence based interpretation.</p>
+
+      <p>Built a Flask dashboard with automated daily scans, sector comparisons, research history, and watchlist management. An interactive options lab integrates live options chains with configurable stock and option positions, visualizing expiration profit and loss, breakeven points, and the tradeoffs between premium income, downside protection, and capped upside.</p>
+
+      <a class="project-back" href="portfolio.html">← Back to Portfolio</a>
+
+      <div class="project-gallery">
+        <h2 class="project-gallery-title">Gallery</h2>
+        <div class="project-gallery-grid">
+          <figure class="project-gallery-item">
+            <img src="../portfolio-imgs/stock-analysis/top.png" alt="Stock detail view with technical signals, insider activity, and recent news" />
+            <figcaption>Stock research view with technical signals and insider activity</figcaption>
+          </figure>
+          <figure class="project-gallery-item">
+            <img src="../portfolio-imgs/stock-analysis/dashboard-today.png" alt="Daily dashboard summarizing market sentiment and today's highlights" />
+            <figcaption>Daily dashboard with market sentiment summary and highlights</figcaption>
+          </figure>
+          <figure class="project-gallery-item">
+            <img src="../portfolio-imgs/stock-analysis/sector-trends.png" alt="Long-term sector trend analysis across the watchlist" />
+            <figcaption>Long-term sector trend analysis</figcaption>
+          </figure>
+          <figure class="project-gallery-item">
+            <img src="../portfolio-imgs/stock-analysis/run-scan.png" alt="Live multiagent scan in progress with an agent activity log" />
+            <figcaption>Live multiagent scan with real time agent activity log</figcaption>
+          </figure>
+          <figure class="project-gallery-item">
+            <img src="../portfolio-imgs/stock-analysis/options-lab.png" alt="Interactive options lab showing net profit and loss chart and breakeven points" />
+            <figcaption>Interactive options lab with net P&amp;L visualization</figcaption>
+          </figure>
+          <figure class="project-gallery-item">
+            <img src="../portfolio-imgs/stock-analysis/manage-watchlist.png" alt="Watchlist management with AI suggested stocks and sectors" />
+            <figcaption>Watchlist management with AI suggested stocks and sectors</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Karen Zhou</p>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>
