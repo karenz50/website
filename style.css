@@ -890,3 +890,5 @@ footer {
   }
   .portfolio-list-image { max-width: 340px; }
 }
+
+.portfolio-cta { text-align: center; margin-top: 2.5rem; }

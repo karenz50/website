@@ -16,11 +16,8 @@
     <ul class="nav-links">
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
-      <li><a href="#tools">Tools/Platforms</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#extracurriculars">Extracurriculars/Honors</a></li>
       <li class="nav-dropdown">
-        <a href="portfolio/portfolio.html">Portfolio</a>
+        <a href="#portfolio">Portfolio</a>
         <ul class="dropdown-menu">
           <li><a href="portfolio/stock-analysis.html">Stock Analysis</a></li>
           <li><a href="portfolio/day-trip-planner.html">Day Trip Planner</a></li>
@@ -32,6 +29,9 @@
           <li><a href="portfolio/fire-detection.html">Fire Detection Using Keras</a></li>
         </ul>
       </li>
+      <li><a href="#tools">Tools/Platforms</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#extracurriculars">Extracurriculars/Honors</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -254,8 +254,45 @@
     </div>
   </section>
 
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="portfolio-list">
+
+        <div class="portfolio-list-item">
+          <div class="portfolio-list-text">
+            <span class="portfolio-num">01</span>
+            <h3>Stock Analysis</h3>
+            <p>Engineered a multiagent AI investment research platform using the Claude API, coordinating specialized agents for technical analysis, corporate research, market sentiment, and historical signal review. Implemented role specific prompting, JSON Schema constrained outputs, concurrent ticker processing, and a portfolio manager agent that synthesizes structured findings into daily investment reports. Combined LLM interpretation with deterministic financial calculations, SEC filings, cross asset indicators, and an interactive options simulator to support equity research and risk assessment.</p>
+            <a class="project-btn" href="portfolio/stock-analysis.html">Learn More</a>
+          </div>
+          <div class="portfolio-list-image">
+            <img src="portfolio-imgs/stock-analysis/top.png" alt="Stock Analysis" />
+          </div>
+        </div>
+
+        <div class="portfolio-list-item">
+          <div class="portfolio-list-text">
+            <span class="portfolio-num">02</span>
+            <h3>Day Trip Planner</h3>
+            <p>Engineered an agentic AI orchestration system in which specialized LLM agents collaborate through structured, schema validated handoffs to research, plan, critique, and revise personalized day trip itineraries. Combined tool using agents with Google Places, real time routing, weather data, and deterministic scheduling to ground model outputs in reliable external data and enforce real world constraints.</p>
+            <a class="project-btn" href="portfolio/day-trip-planner.html">Learn More</a>
+          </div>
+          <div class="portfolio-list-image">
+            <img src="portfolio-imgs/day-trip-planner/day-trip-planner.png" alt="Day Trip Planner" />
+          </div>
+        </div>
+
+      </div>
+      <div class="portfolio-cta">
+        <a class="intro-cta" href="portfolio/portfolio.html">See More Projects</a>
+      </div>
+    </div>
+  </section>
+
   <!-- TOOLS/PLATFORMS -->
-  <section id="tools" class="section">
+  <section id="tools" class="section section-alt">
     <div class="container">
       <h2 class="section-title">Tools / Platforms</h2>
       <div class="tools-grid">
@@ -288,7 +325,7 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section-alt skills-section">
+  <section id="skills" class="section-white skills-section">
     <div class="container">
       <h2 class="section-title">Skills</h2>
     </div>
